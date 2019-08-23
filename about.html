@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <link rel="shortcut icon" href="palmtree.ico" type="image/x-icon">
+     <link rel="stylesheet" href="css/styles.css">
+     <link href="https://fonts.googleapis.com/css?family=Merienda&display=swap" rel="stylesheet"
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+     <title>Horizons Travel</title>
+
+     <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+     <script type="text/javascript">
+          $(document).ready(function() {
+
+               // Check for click events on the navbar burger icon
+               $(".navbar-burger").click(function() {
+                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                    $(".navbar-burger").toggleClass("is-active");
+                    $(".navbar-menu").toggleClass("is-active");
+
+               });
+          });
+     </script>
+</head>
+
+<body>
+     <nav class="navbar danger" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+               <a class="navbar-item" href="index.html">
+                 <h2 class="logo">Horizons Travel</h2>
+               </a>
+
+               <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="homenav">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+               </a>
+
+          </div>
+
+          <div id="homenav" class="navbar-menu">
+               <div class="navbar-end">
+                    <!-- navbar items -->
+                    <a href="index.html" class="navbar-item ">
+                         Home
+                    </a>
+                    <a href="trips.html" class="navbar-item ">
+                         Trips
+                    </a>
+                    <a href="about.html" class="active ">
+                         About Us
+                    </a>
+                    <a href="contact.html" class="navbar-item">
+                         Contact
+                    </a>
+                    <a href="" class="navbar-item ">
+
+                    </a>
+               </div>
+          </div>
+     </nav>
+</body>
+
+</html>
