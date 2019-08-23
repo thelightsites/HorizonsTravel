@@ -78,4 +78,9 @@ body {
     #indexT {
       margin-top: 50px;
     }
+    .indexBack {
+      -webkit-background-size:cover;
+      background-size: cover;
+      background-position: -650px;
+    }
   }
