@@ -23,7 +23,19 @@
         $(".navbar-menu").toggleClass("is-active");
 
       });
+
     });
+
+    document.addEventListener('DOMContentLoaded', function() {
+	let cardToggles = document.getElementsByClassName('card-toggle');
+	for (let i = 0; i < cardToggles.length; i++) {
+		cardToggles[i].addEventListener('click', e => {
+			e.currentTarget.parentElement.parentElement.childNodes[3].classList.toggle('is-hidden');
+		});
+	}
+});
+
+
   </script>
 </head>
 
@@ -65,104 +77,99 @@
     <h1>Upcoming Trips</h1>
   </div>
 
-  <section id="trips" class="section">
+  <section class="section">
+	<div class="container">
+		<div class="card is-fullwidth">
+			<header class="card-header">
+				<p class="card-header-title">New Years Cruise 2019-2020</p>
+				<a class="card-header-icon card-toggle">
+					<i class="fa fa-angle-down"></i>
+				</a>
+			</header>
+			<div class="card-content is-hidden">
+				<div class="content">
+          December 28, 2019 to January 5, 2020 <br>
+          <br>
+          Norwegian Cruise Lines <br>
+          Ship: Norwegian Bliss <br>
+          8 Nights, 9 Days<br>
+          <hr>
+          <strong>Itinerary:</strong><br>
+          <br>
+          <strong>Day 1:</strong> Departure from New York 4:00pm<br>
+          <strong>Day 2:</strong> Fun Day at Sea<br>
+          <strong>Day 3: & Day 4:</strong> Port Canaveral, Florida, Arrive 1:00pm, Overnight on Ship,
+          Depart Port Canaveral at 6:00pm (New Years Eve)<br>
+          <strong>Day 5:</strong> Great Stirrup Cay, Bahamas (Private Island), 8:00am-6:00pm<br>
+          <strong>Day 6:</strong> Nassau, Bahamas 8:00am-6:00pm<br>
+          <strong>Day 7: </strong>Fun Day at Sea<br>
+          <strong>Day 8:</strong> Fun Day at Sea<br>
+          <strong>Day 9: </strong>Return to New York, Disembarking begins at 8:00am<br>
+          <br>
+          <em>
+            The ship will be docked at Port Canaveral from 1:00pm 12/30/19 to 6:00pm 12/31/19 during which time optional reservations can be made to visit attractions such as The Kennedy Space Center, Disneyworld, Sea World, Universal Studios and
+            others. Reservations for rental cars can also be made.<br>
+            <br>
+            On Day#5 we will be docked at NCL’s private island Stirrup Cay and enjoy a barbeque, beverages and their private beach.<br>
+            <br>
+            Included in this Special New Years Cruise is The Ultimate Beverage Package and the Ultimate Specialty Dining Package. This is a free style dining cruise with a casual dress code.<br>
+            <br>
+            This is a Special Negotiated New Years Cruise and is subject to limited reservations, reservations will be taken on a first come first serve basis. <strong>($75.00 p.p. deposit required at time of reservation)</strong><br>
+            <br>
+            <strong>Inside Cabins- from $3095.76 for two persons<br>
+              Balcony Cabins- from <strong>$4395.76</strong> for two persons<br>
+              Mini Suites- from <strong>$4795.76</strong> for two persons<br>
+              Studio Cabins (One Person Cabin) - Upon Request, if available, fare TBA<br></strong>
+          </em>
+				</div>
+			</div>
+		</div>
 
-    <div class="columns">
-      <div class="column is-half">
-        <div class="card">
-          <div class="card-content">
-            <h1 class="card-header-title is-centered">
-              New Years Cruise 2019-2020
-            </h1>
-
-            <p class="subtitle">
-              December 28, 2019 to January 5, 2020 <br>
-              <br>
-              Norwegian Cruise Lines <br>
-              Ship: Norwegian Bliss <br>
-              8 Nights, 9 Days<br>
-              <hr>
-              <strong>Itinerary:</strong><br>
-              <br>
-              <strong>Day 1:</strong> Departure from New York 4:00pm<br>
-              <strong>Day 2:</strong> Fun Day at Sea<br>
-              <strong>Day 3: & Day 4:</strong> Port Canaveral, Florida, Arrive 1:00pm, Overnight on Ship,
-              Depart Port Canaveral at 6:00pm (New Years Eve)<br>
-              <strong>Day 5:</strong> Great Stirrup Cay, Bahamas (Private Island), 8:00am-6:00pm<br>
-              <strong>Day 6:</strong> Nassau, Bahamas 8:00am-6:00pm<br>
-              <strong>Day 7: </strong>Fun Day at Sea<br>
-              <strong>Day 8:</strong> Fun Day at Sea<br>
-              <strong>Day 9: </strong>Return to New York, Disembarking begins at 8:00am<br>
-              <br>
-              <em>
-                The ship will be docked at Port Canaveral from 1:00pm 12/30/19 to 6:00pm 12/31/19 during which time optional reservations can be made to visit attractions such as The Kennedy Space Center, Disneyworld, Sea World, Universal Studios and
-                others. Reservations for rental cars can also be made.<br>
-                <br>
-                On Day#5 we will be docked at NCL’s private island Stirrup Cay and enjoy a barbeque, beverages and their private beach.<br>
-                <br>
-                Included in this Special New Years Cruise is The Ultimate Beverage Package and the Ultimate Specialty Dining Package. This is a free style dining cruise with a casual dress code.<br>
-                <br>
-                This is a Special Negotiated New Years Cruise and is subject to limited reservations, reservations will be taken on a first come first serve basis. <strong>($75.00 p.p. deposit required at time of reservation)</strong><br>
-                <br>
-                <strong>Inside Cabins- from $3095.76 for two persons<br>
-                  Balcony Cabins- from <strong>$4395.76</strong> for two persons<br>
-                  Mini Suites- from <strong>$4795.76</strong> for two persons<br>
-                  Studio Cabins (One Person Cabin) - Upon Request, if available, fare TBA<br></strong>
-              </em>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="card">
-          <div class="card-content">
-            <h1 class="card-header-title is-centered">
-              New Years Cruise 2020-2021
-            </h1>
-
-            <p class="subtitle">
-              December 22, 2020 to January 3, 2021 <br>
-              <br>
-              Norwegian Cruise Lines <br>
-              Ship: Norwegian Bliss <br>
-              12 Nights, 13 Days<br>
+		<div class="card is-fullwidth">
+			<header class="card-header">
+				<p class="card-header-title">New Years Cruise 2020-2021</p>
+				<a class="card-header-icon card-toggle">
+					<i class="fa fa-angle-down"></i>
+				</a>
+			</header>
+			<div class="card-content is-hidden">
+				<div class="content">
+          December 22, 2020 to January 3, 2021 <br>
+          <br>
+          Norwegian Cruise Lines <br>
+          Ship: Norwegian Bliss <br>
+          12 Nights, 13 Days<br>
 
 <hr>
-              <strong>Itinerary:</strong><br>
-              <br>
-              <strong>Day 1:</strong> Departure from New York 4:00pm<br>
-              <strong>Day 2:</strong> Fun Day at Sea<br>
-              <strong>Day 3:</strong> Fun Day at Sea<br>
-              <strong>Day 4:</strong> Arrive Puerto Plata, Dominican Republic at 10:00 am, Departs at 4:00 pm (Christmas Day) <br>
-              <strong>Day 5:</strong> Arrive St.Thomas, USVI at 11:00 am, Departs at 7:00pm <br>
-              <strong>Day 6:</strong> Arrive St. Kitts at 8:00 am Derparts at 4:00 pm <br>
-              <strong>Day 7:</strong> Arrive Barbados at 10:00 am, Departs at 5:00pm<br>
-              <strong>Day 8:</strong> Arrive St. Lucia at 8:00am, Departs at 5:00pm<br>
-              <strong>Day 9:</strong> Arrive St. Johns Antigua at 8:00am, Departs at 5:00pm<br>
-              <strong>Day 10:</strong> Arrive Tortola at 6:00am, Departs 1:00PM (New Years Eve)<br>
-              <strong>Day 11:</strong> Fun Day at Sea<br>
-              <strong>Day 12:</strong> Fun Day at Sea<br>
-              <strong>Day 13:</strong> Return to dock at New York at 8:00 am, Disembarkation<br>
-              <br>
-              <strong>Included with this Special Christmas & New Years Caribbean Cruise are The Ultimate Beverage package and the Ultimate specialty Dining Package.</strong> <em>(Applies only to 1st and 2nd guest)</em> Gratuities and taxes are
-              included in the Ultimate Beverage and Dining Packages<br>
-              This is a free style dining cruise with a casual dress code. <br>
-              This is a Special Agency Negotiated Carribbean Cruise and is subject to limited bookings. <br>
-              <strong>Bookings will be taken on a first come first serve basis. ($75.00 p.p deposit required at time of reservation)</strong> <br>
-              Cruise bookings will be given a per cabin Special Bonus, Bonus TBA at time of Booking. <br>
-              <strong>Cabin Fares from $2526.00 per person </strong><br>Call for cabin category rates/further details <br>
-              3rd & 4th guest fares available <br></strong>
-
-
-
-
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+          <strong>Itinerary:</strong><br>
+          <br>
+          <strong>Day 1:</strong> Departure from New York 4:00pm<br>
+          <strong>Day 2:</strong> Fun Day at Sea<br>
+          <strong>Day 3:</strong> Fun Day at Sea<br>
+          <strong>Day 4:</strong> Arrive Puerto Plata, Dominican Republic at 10:00 am, Departs at 4:00 pm (Christmas Day) <br>
+          <strong>Day 5:</strong> Arrive St.Thomas, USVI at 11:00 am, Departs at 7:00pm <br>
+          <strong>Day 6:</strong> Arrive St. Kitts at 8:00 am Derparts at 4:00 pm <br>
+          <strong>Day 7:</strong> Arrive Barbados at 10:00 am, Departs at 5:00pm<br>
+          <strong>Day 8:</strong> Arrive St. Lucia at 8:00am, Departs at 5:00pm<br>
+          <strong>Day 9:</strong> Arrive St. Johns Antigua at 8:00am, Departs at 5:00pm<br>
+          <strong>Day 10:</strong> Arrive Tortola at 6:00am, Departs 1:00PM (New Years Eve)<br>
+          <strong>Day 11:</strong> Fun Day at Sea<br>
+          <strong>Day 12:</strong> Fun Day at Sea<br>
+          <strong>Day 13:</strong> Return to dock at New York at 8:00 am, Disembarkation<br>
+          <br>
+          <strong>Included with this Special Christmas & New Years Caribbean Cruise are The Ultimate Beverage package and the Ultimate specialty Dining Package.</strong> <em>(Applies only to 1st and 2nd guest)</em> Gratuities and taxes are
+          included in the Ultimate Beverage and Dining Packages<br>
+          This is a free style dining cruise with a casual dress code. <br>
+          This is a Special Agency Negotiated Carribbean Cruise and is subject to limited bookings. <br>
+          <strong>Bookings will be taken on a first come first serve basis. ($75.00 p.p deposit required at time of reservation)</strong> <br>
+          Cruise bookings will be given a per cabin Special Bonus, Bonus TBA at time of Booking. <br>
+          <strong>Cabin Fares from $2526.00 per person </strong><br>Call for cabin category rates/further details <br>
+          3rd & 4th guest fares available <br></strong>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
 </body>
 

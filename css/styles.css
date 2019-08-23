@@ -51,32 +51,34 @@ body {
   padding: 0;
 }
 
-.card {
-  border-radius: 2em;
+
+.card+.card {
+	margin-top: 40px;
 }
 
-.card-content {
-
-}
-
-.subtitle {
-
-}
-
-.card-header-title {
-  font-size: 30px;
-
-}
 
 .active {
   padding:15px;
   color:#a0cc78;
 }
 
+.container {
+  top: 50px;
+}
+
+.consult1 {
+  color: white;
+  font-size: 40px;
+  text-shadow: 5px 5px black;
+  text-align: center;
+  margin-top: -25px;
+  font-family: 'Lobster', cursive;
+}
+
 @media screen and (max-width: 600px) {
 
     #indexT {
-      margin-top: 50px;
+      margin-top: 70px;
       font-size: 50px;
     }
     .indexBack {
