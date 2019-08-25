@@ -7,7 +7,7 @@
 #indexT{
   color: white;
   font-size: 100px;
-  text-shadow: 5px 5px black;
+  text-shadow: 3px 3px black;
   text-align: center;
   margin-top: 300px;
   font-family: 'Lobster', cursive;
@@ -70,7 +70,7 @@ body {
 #consult1 {
   color: white;
   font-size: 40px;
-  text-shadow: 5px 5px black;
+  text-shadow: 3px 3px black;
   text-align: center;
   margin-top: -25px;
   font-family: 'Lobster', cursive;
